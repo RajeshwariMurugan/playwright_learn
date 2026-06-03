@@ -7,9 +7,10 @@ test("open website",async({page})=>{
     await expect(page).toHaveTitle("Facebook");
 })
 
-test("open website",async({page})=>{
+test("open website2",async({page})=>{
     await page.goto("https://www.google.com");
-     let title:string=await page.title();
+     let title:string= page.title();
     console.log("title: ",title);
     await expect(page).toHaveTitle("Google");
 })
+
