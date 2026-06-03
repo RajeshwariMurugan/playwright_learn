@@ -9,7 +9,7 @@ test("open website",async({page})=>{
 
 test("open website2",async({page})=>{
     await page.goto("https://www.google.com");
-     let title:string= page.title();
+     let title= page.title();
     console.log("title: ",title);
     await expect(page).toHaveTitle("Google");
 })

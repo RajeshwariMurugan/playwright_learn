@@ -1,11 +1,10 @@
 import{test,expect}from "@playwright/test";
 
-test("find locators",async({page})=>{
-    await page.goto("https://demo.nopcommerce.com/");
-     let title:string=await page.title();
-    console.log("title: ",title);
-    const logo:Locator= page.getByAltText("nopCommerce demo store")
-    logo.click();
-     await expect(logo).toBeVisible();
-
+test("find locators", async ({ page }) => {
+    console.log("Welcome");
+    await page.goto("https:www.google.com");
+   await page.getByRole("link",{name:'Gmail'}).click();
+console.log(await page.title()); // Page title
+console.log(page.url());         // Current URL     
 })
+
