@@ -8,6 +8,5 @@ test("test automation", async ({ page }) => {
     console.log(await page.title()); 
 
    await page.getByRole("button",{name:'Primary Action'}).click();
-  // await page.getByRole("textbox").fill("playwright");
-  await  page.getByRole("button",{name:' Accept terms'}).click();
+await page.getByRole("checkbox",{name:"Accept terms"}).click();
 })
