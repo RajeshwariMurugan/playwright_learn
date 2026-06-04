@@ -15,11 +15,16 @@ test("inputs", async ({ page }) => {
    await page.getByLabel('Email address or mobile number').fill("raji@gmail.com");
    await page.getByLabel('Password').fill("admin@124");
 
-   await page.goto("https://testautomationpractice.blogspot.com/");
-   const searchbox=page.getByPlaceholder("Enter Name");
-   await searchbox.fill("playwright");
-    const emailbox=page.getByPlaceholder("Enter EMail");
-   await emailbox.fill("playwright@gmail.com");
+//    await page.goto("https://testautomationpractice.blogspot.com/");
+//    const searchbox=page.getByPlaceholder("Enter Name");
+//    await searchbox.fill("playwright");
+//     const emailbox=page.getByPlaceholder("Enter EMail");
+//    await emailbox.fill("playwright@gmail.com");
+
+
+   await page.goto("http://127.0.0.1:5500/tests/first.html");
+   console.log("thanks")
+   
 
     
 })
